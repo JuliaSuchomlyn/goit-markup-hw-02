@@ -1,3 +1,37 @@
-body{
-    background-color: aqua;
+body {
+  background-color: #e5e5e5;
+  color: #212121;
+}
+.list {
+  list-style: none;
+}
+/* accent color #2196F3 */
+/* basic color text #212121 */
+/* secondary color text #757575 */
+/* white #ffffff */
+/* basic background color #E5E5E5*/
+/* secondary background color #F5F4FA */
+/* accent backround color #2F303A */
+/* contacts footer rgba(255, 255, 255, 0,6) */
+.logo {
+  color: #212121;
+}
+.logo-accent {
+  color: #2196f3;
+}
+/* site nav */
+.site-nav .link {
+  color: #212121;
+}
+.site-nav .link:hover,
+.site-nav .link:focus {
+  color: #2196f3;
+}
+/* contacts */
+.contacts a {
+  color: #757575;
+}
+.contacts a:hover,
+.contacts a:focus {
+  color: #2196f3;
 }
