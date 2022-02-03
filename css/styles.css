@@ -13,6 +13,7 @@
   --secondary-bg-color: #f5f4fa;
   --footer-bg-color: #2f303a;
   --footer-contact-color: rgba(255, 255, 255, 0, 6);
+  --secondary-accent-color: #188ce8;
 }
 body {
   color: var(--basic-color-text);
@@ -22,6 +23,9 @@ body {
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
+}
+.link {
+  text-decoration: none;
 }
 .list {
   list-style: none;
@@ -40,32 +44,25 @@ body {
 .logo-accent {
   color: var(--accent-color);
 }
-/* site nav */
-.site-nav .link {
-  color: var(--secondary-color-text);
-
-  font-weight: 500;
-
-  text-decoration: none;
-}
-.site-nav .link:hover,
-.site-nav .link:focus,
-.contacts a:hover,
-.contacts a:focus {
-  color: var(--accent-color);
-}
-.site-nav .link.current {
-  color: var(--accent-color);
-}
-/* contacts */
-.contacts a {
-  color: var(--basic-color-text);
-
-  text-decoration: none;
-}
-.contacts.feedback {
+/* site-nav */
+.site-nav {
   font-weight: 500;
   line-height: 1.14;
+}
+.link.nav {
+  color: var(--secondary-color-text);
+}
+.feedback.link {
+  color: var(--basic-color-text);
+}
+.link.nav:hover,
+.link.nav:focus,
+.feedback.link:hover,
+.feedback.link:focus {
+  color: var(--accent-color);
+}
+.link.nav.current {
+  color: var(--accent-color);
 }
 /* hero */
 .hero-title {
@@ -75,23 +72,6 @@ body {
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
-  text-transform: uppercase;
-}
-/* section */
-.section-title {
-  color: var(--secondary-color-text);
-
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.16;
-}
-/* feature */
-.feature h3 {
-  color: var(--secondary-color-text);
-
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.14;
   text-transform: uppercase;
 }
 /* button */
@@ -109,6 +89,10 @@ body {
   font-weight: 700;
   line-height: 1.87;
 }
+.button.primary:hover,
+.button.primary:focus {
+  background-color: var(--secondary-accent-color);
+}
 .button.secondary {
   font-weight: 500;
   line-height: 1.62;
@@ -120,18 +104,44 @@ body {
 
   cursor: pointer;
 }
+/* section*/
+.features-title,
+.working-title,
+.team-title {
+  color: var(--secondary-color-text);
+  font-size: 36px;
+  line-height: 1.17;
+}
+.features-point {
+  color: var(--secondary-color-text);
+
+  line-height: 1.14;
+  text-transform: uppercase;
+}
+.team-name {
+  color: var(--secondary-color-text);
+
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+}
+.team-position {
+  font-size: 16px;
+  line-height: 1.19;
+}
 /* footer */
 .footer {
   background-color: var(--footer-bg-color);
 }
-.footer .contacts {
-  color: var(--footer-contact-color);
-
-  text-decoration: none;
+.footer .logo {
+  color: var(--primary-white-color);
+}
+.location {
+  color: var(--primary-white-color);
   font-style: normal;
 }
-.footer .logo,
-.footer a[href="https://goo.gl/maps/sGWzshtrrZ5VpV499"]
-{
-  color: var(--primary-white-color);
+.mail,
+.tell {
+  color: var(--footer-contact-color);
+  font-style: normal;
 }
