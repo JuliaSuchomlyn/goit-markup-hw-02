@@ -176,6 +176,10 @@ body {
   color: var(--primary-white-color);
   font-style: normal;
 }
+.location:hover,
+.location:focus {
+  color: var(--accent-color);
+}
 .mail,
 .tell {
   color: var(--footer-contact-color);
