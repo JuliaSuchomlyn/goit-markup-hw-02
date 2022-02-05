@@ -53,7 +53,7 @@ body {
 .logo-accent {
   color: var(--accent-color);
 }
-/* ===logo end */
+/* ===logo end ===*/
 /* ===site-nav start=== */
 .site-nav {
   font-weight: 500;
@@ -61,6 +61,12 @@ body {
 }
 .link.nav {
   color: var(--secondary-color-text);
+}
+.contacts a {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
 }
 .feedback.link {
   color: var(--basic-color-text);
@@ -114,6 +120,7 @@ body {
 .button.secondary {
   font-weight: 500;
   line-height: 1.62;
+  letter-spacing: 0.03em;
 }
 .button.secondary:hover,
 .button.secondary:focus {
@@ -131,6 +138,7 @@ body {
 .features-point {
   color: var(--secondary-color-text);
 
+  font-size: 14px;
   line-height: 1.14;
   text-transform: uppercase;
 }
@@ -180,8 +188,8 @@ body {
 .location:focus {
   color: var(--accent-color);
 }
-.mail,
-.tell {
+.feedback.mail.link,
+.feedback.tell.link {
   color: var(--footer-contact-color);
   font-style: normal;
 }
